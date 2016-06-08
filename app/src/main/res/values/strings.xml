@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Digital Literacy</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="a1">Digital Literacy</string>
+    <string name="a2">One step ahead</string>
+    <string name="a3">IRCTC</string>
+    <string name="a4">Google</string>
+    <string name="a5">BSNL</string>
+    <string name="a6">KSRTC</string>
+    <string name="a7">Login</string>
+    <string name="a8">User ID</string>
+    <string name="a9">Password</string>
+    <string name="a10">Captcha</string>
+    <string name="a11">Captcha letters are case sensitive and to be entered in Upper Case only</string>
+    <string name="a12">Request OTP</string>
+    <string name="a13"><u>Forgot Password</u></string>
+    <string name="a14"><u>Sign Up</u></string>
+    <string name="a15"><u>NGeT Agent Login</u></string>
+    <string name="a16"><u>Agent Login</u></string>
+    <string name="a17"><u>Mumbai Suburban Season Ticket</u></string>
+</resources>

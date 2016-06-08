@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorIRCTCBlue"
+        android:padding="10dp"
+        android:text="@string/a7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/a8"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/user_id_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/user_id_label"
+                android:layout_margin="5dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_toRightOf="@+id/user_id_label"
+                android:background="@drawable/edit_text_bg"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/password_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_id_label"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/a9"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/password_label"
+                android:inputType="textPassword"
+                android:layout_margin="5dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_toRightOf="@+id/password_label"
+                android:background="@drawable/edit_text_bg"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/captcha_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password_label"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/a10"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/captcha_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/captcha_label"
+                android:layout_margin="5dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_toRightOf="@+id/captcha_label"
+                android:background="@drawable/edit_text_bg"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/captcha_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/captcha_label"
+                android:padding="10dp"
+                android:text="@string/a11"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#8416e0"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/captcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/captcha_info"
+                android:src="@drawable/captcha1" />
+
+            <ImageView
+                android:id="@+id/captcha_reload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/captcha"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/captcha"
+                android:clickable="true"
+                android:src="@drawable/refresh" />
+
+            <CheckBox
+                android:id="@+id/request_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/captcha"
+                android:text="@string/a12"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/cardview_dark_background" />
+
+            <View
+                android:id="@+id/horizontal_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/request_otp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorIRCTCBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/horizontal_line"
+                android:background="#e5f4fe"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/forgot_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/a13"
+                            android:textColor="#3a6ed5" />
+
+                        <TextView
+                            android:id="@+id/sign_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/a14"
+                            android:textColor="#3a6ed5" />
+
+                        <TextView
+                            android:id="@+id/nget"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/a15"
+                            android:textColor="#3a6ed5" />
+
+                        <TextView
+                            android:id="@+id/agent_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/a16"
+                            android:textColor="#3a6ed5" />
+
+                        <TextView
+                            android:id="@+id/mumbai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/a17"
+                            android:textColor="#3a6ed5" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/a7"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
